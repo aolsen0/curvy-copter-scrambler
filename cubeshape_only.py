@@ -3,28 +3,28 @@ phase1=[]
 phase2=[]
 phase3=[]
 phase4=[]
-a=open("phase1.txt")
+a=open("lookup/phase1.txt")
 i=0
 for line in a:
     if i==1:
         phase1.append(line)
     i=1-i
 a.close()
-b=open("phase2.txt")
+b=open("lookup/phase2.txt")
 i=0
 for line in b:
     if i==1:
         phase2.append(line)
     i=1-i
 b.close()
-c=open("phase3.txt")
+c=open("lookup/phase3.txt")
 i=0
 for line in c:
     if i==1:
         phase3.append(line)
     i=1-i
 c.close()
-d=open("phase4.txt")
+d=open("lookup/phase4.txt")
 i=0
 for line in d:
     if i==1:

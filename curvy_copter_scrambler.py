@@ -91,7 +91,7 @@ def encode1(pos):
     return pos[0]+24*pos[1]+576*pos[2]+13824*pos[3]+331776*pos[4]+663552*pos[5]+1327104*pos[6]+2654208*pos[7]
 
 #create all the lookup tables from information in external files
-a=open("phase0_1.txt")
+a=open("lookup/phase0_1.txt")
 i=0
 phase0_1={}
 for line in a:
@@ -101,7 +101,7 @@ for line in a:
         phase0_1[curr]=line
     i=1-i
 a.close()
-b=open("phase0_2.txt")
+b=open("lookup/phase0_2.txt")
 i=0
 phase0_2={}
 for line in b:
@@ -111,7 +111,7 @@ for line in b:
         phase0_2[curr]=line
     i=1-i
 b.close()
-c=open("phase0_3.txt")
+c=open("lookup/phase0_3.txt")
 i=0
 phase0_3={}
 for line in c:
@@ -121,7 +121,7 @@ for line in c:
         phase0_3[curr]=line
     i=1-i
 c.close()
-d=open("phase1.txt")
+d=open("lookup/phase1.txt")
 i=0
 phase1={}
 for line in d:
@@ -131,7 +131,7 @@ for line in d:
         phase1[curr]=line
     i=1-i
 d.close()
-e=open("phase2.txt")
+e=open("lookup/phase2.txt")
 i=0
 phase2={}
 for line in e:
@@ -141,7 +141,7 @@ for line in e:
         phase2[curr]=line
     i=1-i
 e.close()
-f=open("phase3.txt")
+f=open("lookup/phase3.txt")
 i=0
 phase3={}
 for line in f:
@@ -151,7 +151,7 @@ for line in f:
         phase3[curr]=line
     i=1-i
 f.close()
-g=open("phase4.txt")
+g=open("lookup/phase4.txt")
 i=0
 phase4={}
 for line in g:
@@ -161,7 +161,7 @@ for line in g:
         phase4[curr]=line
     i=1-i
 g.close()
-h=open("shape.txt")
+h=open("lookup/shape.txt")
 poss=[0]*654117
 i=0
 for line in h:
